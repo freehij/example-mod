@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'io.github.freehij.mcartifact'
+}
+
+group = 'io.github.freehij'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly 'com.github.freehij:javaagent-modloader:main-SNAPSHOT'
+}
+
+mcartifact {
+    version = '1.21.11'
+    environment = 'client'
+}
