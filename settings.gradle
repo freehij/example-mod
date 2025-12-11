@@ -1,3 +1,3 @@
-rootProject.name = 'HitMarker'
+rootProject.name = 'ExampleMod'
 
 includeBuild 'mcartifact'
