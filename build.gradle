@@ -3,12 +3,12 @@ plugins {
     id 'io.github.freehij.mcartifact'
 }
 
-group = 'io.github.freehij'
-version = '1.0-SNAPSHOT'
+group = 'io.github.example'
+version = project.mod_version
 
 repositories {
     mavenCentral()
-    maven { url 'https://jitpack.io' }
+    maven { url = 'https://jitpack.io' }
 }
 
 dependencies {
@@ -16,6 +16,6 @@ dependencies {
 }
 
 mcartifact {
-    version = '1.21.11'
-    environment = 'client'
+    version = project.minecraft_version
+    environment = project.environment
 }
